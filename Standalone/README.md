@@ -15,7 +15,7 @@ Spark可以建立群集來跨資源分配，基本上有三種模式可以選擇
 - Slave1 (IP：192.168.2.102)
 - Slave2 (IP：192.168.2.103)
 
-這三台都按照之前的[教學](../Install/README.md)進行Spark的安裝，
+這三台都按照之前的[教學](../Install/)進行Spark的安裝，
 並把Slave1與Slave2當作Worker Node。
 
 ## 環境設定
