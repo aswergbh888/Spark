@@ -1,5 +1,4 @@
-#
-Spark環境安裝
+# Spark環境安裝
 一般來說要佈建Spark環境需要先裝Java、Scala，所以我們先從這兩個開始安裝。
 先介紹一下我佈署的環境：
 - Ubuntu 16.04 LTS
