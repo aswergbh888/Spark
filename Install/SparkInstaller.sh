@@ -1,4 +1,8 @@
 #!/bin/bash
+# Program:
+#       Install spark on your host.
+# History:
+# 	2017/02/15 Howard Release
 
 # Java
 sudo apt-get install -y python-software-properties debconf-utils
