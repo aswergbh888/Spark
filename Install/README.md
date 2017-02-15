@@ -7,7 +7,9 @@
 - Hadoop 2.7
 
 佈建Spark環境之前，需要先裝Java、Scala
+
 下面會一步一步教如何安裝
+
 教學最後我也寫了一個Script來幫助自動安裝
 ## Java環境安裝
 ```
@@ -25,7 +27,9 @@ $ tar -xzvf scala-2.12.1.tgz
 ```
 ## Spark + Hadoop環境安裝
 基本上可以到官方網站http://spark.apache.org/downloads.html
+
 選擇你要的版本，這邊我是選spark-2.1.0-bin-hadoop2.7來做下載
+
 我還是將它放到HOME目錄底下
 ```
 $ cd ~
@@ -34,8 +38,11 @@ $ tar -xzvf spark-2.1.0-bin-hadoop2.7.tgz
 ```
 ## 環境變數
 到這裡該下載的都完成了，再來就是設定環境變數
+
 主要是編輯~/.bashrc這個檔案，在裡面新增下列指令
+
 這邊要注意的一點是，SPARK_HOME與SCALA_HOME這邊是我剛剛下載的路徑，所以請按照自己環境設定
+
 而JAVA_HOME一般來講是不用動的
 ```
 export SPARK_HOME=~/spark-2.1.0-bin-hadoop2.7
@@ -49,6 +56,7 @@ $ source ~/.bashrc
 ```
 ## 執行Spark
 最後一步就是執行Spark看看是否成功
+
 到Spark目錄下的/bin/執行下面指令
 ```
 $ spark-shell
@@ -64,3 +72,9 @@ Spark會安裝在HOME目錄，所以要執行spark-shell就輸入下面指令
 ```
 $ ~/spark-2.1.0-bin-hadoop2.7/bin/spark-shell
 ```
+
+
+
+
+
+
