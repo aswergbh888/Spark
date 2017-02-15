@@ -7,6 +7,8 @@
 - Hadoop 2.7
 
 佈建Spark環境之前，需要先裝Java、Scala
+下面會一步一步教如何安裝
+教學最後我也寫了一個Script來幫助自動安裝
 ## Java環境安裝
 ```
 $ add-apt-repository ppa:webupd8team/java
@@ -53,8 +55,12 @@ $ spark-shell
 ```
 看到下面結果就表示成功囉
 ![](Spark-Shell.png)
-
-
-
-
-
+## 自動安裝
+在新的環境直接跑下面指令
+```
+$ wget https://raw.githubusercontent.com/aswergbh888/Spark/master/Install/SparkInstaller.sh -O - | sh
+```
+Spark會安裝在HOME目錄，所以要執行spark-shell就輸入下面指令
+```
+$ ~/spark-2.1.0-bin-hadoop2.7/bin/spark-shell
+```
