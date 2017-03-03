@@ -18,7 +18,7 @@ Spark可以建立群集來跨資源分配，基本上有三種模式可以選擇
 | Slave1   | 192.168.2.102 |
 | Slave2   | 192.168.2.103 |
 
-這三台都按照之前的[教學](../Install/)進行Spark的安裝
+這三台都按照之前的[教學](../Install/README.md)進行Spark的安裝
 
 並把Slave1與Slave2當作Worker Node
 
@@ -74,6 +74,13 @@ $ spark-submit --master spark://[Master_IP]:7077 pi.py 10
 
 ![](Images/CalcPI.png)
 
+## 結束Standlaone Mode
+如果關閉Standalone
+
+就到Spark目錄下的```/sbin```執行下面指令
+```
+$ ./stop-all.sh
+```
 ## 參考
 http://spark.apache.org/docs/latest/spark-standalone.html
 
