@@ -77,6 +77,10 @@ $ scp -r slaves spark@Slave2:~/spark-2.1.0-bin-hadoop2.7/conf
 ```
 $ ./start-all.sh
 ```
+如果要結束就輸入下面指令
+```
+$ ./stop-all.sh
+```
 
 ![](Images/StartStandalone.png)
 
